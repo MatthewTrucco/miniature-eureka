@@ -18,3 +18,5 @@ dbJson.push(newFeedback);
 fs.writeFileSync("db/db.json", JSON.stringify(dbJson));
 res.json(dbJson);
 });
+
+module.exports = router; 
