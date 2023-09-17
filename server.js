@@ -11,6 +11,6 @@ app.use(express.static('public'));
 app.use('/api', api_routes);
 app.use('/', html_routes);
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
